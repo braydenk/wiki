@@ -18,6 +18,9 @@
     "lint:js": "npm run lint:eslint src/",
     "lint:fix": "npm run lint:js -- --fix"
   },
+  "hooks": {
+    "pre-commit": "yarn lint"
+  },
   "dependencies": {
     "body-parser": "1.19.0",
     "compression": "1.7.4",
